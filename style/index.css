@@ -1,1 +1,169 @@
-/* Add CSS styling here */
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 1px solid grey;
+}
+
+/* General Styles */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #4F4F4F;
+}
+
+h1 h2{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+section{
+    padding: 4% 0;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #4F4F4F;
+}
+
+/* Header Section Styles */
+
+header nav{
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+
+/* Top Section Styles */
+
+.top{
+    background-image: url(https://images.unsplash.com/photo-1517091311747-7da6b8715dbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2307&q=80);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    width: 85%;
+    height: 45vh;
+}
+
+.titles h1, .titles a{
+    color: #fff;
+    text-align: center;
+}
+
+.link{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+
+.titles a{
+    border: 1px solid #fff;
+    width: 25%;
+    text-align: center;
+}
+
+/* Gallery Section Styles */
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container div, .container p{
+    width: 30%;
+    margin: 4% 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Section Styles */
+
+footer{
+    background-color: grey;
+    height: 15vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a{
+    background: #fff;
+    
+}
