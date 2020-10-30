@@ -50,7 +50,6 @@ table {
 *{
     box-sizing: border-box;
     max-width: 100%;
-    border: 1px solid grey;
 }
 
 /* General Styles */
@@ -96,7 +95,22 @@ header nav{
     padding: 2% 0;
     display: flex;
     justify-content: space-between;
-    width: 99%;
+    width: 100%;
+    align-items:center;
+    text-align: center;
+}
+
+header{
+    margin: 0 2%;
+}
+
+.links a{
+    border: 1px solid #4F4F4F;
+}
+
+.links a:hover{
+    background: #4F4F4F;
+    color: #fff;
 }
 
 /* Top Section Styles */
@@ -108,7 +122,7 @@ header nav{
     align-items:center;
     text-align: center;
     width: 85%;
-    height: 45vh;
+    height: 60vh;
 }
 
 .titles h1, .titles a{
@@ -121,12 +135,14 @@ header nav{
     justify-content:center;
     align-items:center;
     text-align: center;
-}
-
-.titles a{
     border: 1px solid #fff;
     width: 25%;
-    text-align: center;
+    margin: 0 auto;
+}
+
+.link:hover{
+    background: #fff;
+    color: #4F4F4F;
 }
 
 /* Gallery Section Styles */
@@ -134,7 +150,9 @@ header nav{
 .container{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .container div, .container p{
@@ -144,6 +162,8 @@ header nav{
     align-items: flex-end;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .project{
@@ -151,6 +171,13 @@ header nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.project img{
+    object-fit: cover;
+    overflow: hidden;
+    height: 35vh;
+    width: 100%;
 }
 
 /* Footer Section Styles */
@@ -166,4 +193,10 @@ footer{
 .footer a{
     background: #fff;
     
+}
+
+.footer a:hover{
+    background: grey;
+    color: #fff;
+    border: 1px solid #fff;
 }
